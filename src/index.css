@@ -13,6 +13,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  background: #3D5262;
+  gap: 5em;
 }
 
 .logo {
@@ -20,6 +22,8 @@ header {
   padding: 1em;
   font-size: 2em;
   font-weight: bold;
+  color: white;
+
 }
 
 nav {
@@ -56,4 +60,39 @@ nav ul li a {
   margin-top: 1em;
   cursor: pointer;
   height: 2em;
+}
+
+.active {
+  color: rgb(55, 222, 97);
+}
+
+@media (min-width: 500px) {
+
+  .open,
+  .close {
+    display: none;
+  }
+
+  nav {
+    visibility: unset;
+    background-color: unset;
+    position: unset;
+    height: auto;
+  }
+
+  ul {
+    display: flex;
+    margin-top: auto;
+    width: auto;
+    float: right;
+    margin: 0;
+  }
+
+  li a {
+    color: #ADDBFF;
+    display: block;
+    padding: 1em;
+  }
+
+
 }
